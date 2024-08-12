@@ -27,5 +27,6 @@ jobs:
       with:
         name: analysis-results
         path: |
+          artifact/*.txt
+          artifact/*.png
           github_data.json
-          *.png
