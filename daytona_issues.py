@@ -18,7 +18,7 @@ repo = "daytona"
 api_url = f"https://api.github.com/repos/{owner}/{repo}"
 
 # Your GitHub personal access token (replace 'your_token_here' with your actual token)
-access_token = os.environ.get('MY_GITHUB_TOKEN')
+access_token = os.environ.get('GITHUB_TOKEN')
 headers = {
     'Authorization': f'token {access_token}'
 }
