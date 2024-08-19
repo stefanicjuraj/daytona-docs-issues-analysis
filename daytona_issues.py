@@ -22,6 +22,10 @@ owner = "daytonaio"
 repo = "daytona"
 api_url = f"https://api.github.com/repos/{owner}/{repo}"
 
+# Load environment variables from .env file, for local testing uncomment the following lines
+# from dotenv import load_dotenv  # Import load_dotenv
+# load_dotenv()
+
 # Your GitHub personal access token (replace 'your_token_here' with your actual token)
 access_token = os.environ.get('GITHUB_TOKEN')
 
