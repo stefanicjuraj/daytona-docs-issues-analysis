@@ -5,6 +5,9 @@ on:
     - cron: '0 7 * * 1' # Run every Monday at 07:00 UTC (which is 08:00 CET)
   workflow_dispatch:  # Allow manual triggering
 
+permissions:
+  contents: write  # Add this line
+
 jobs:
   analyze:
     runs-on: ubuntu-latest
