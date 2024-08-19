@@ -18,15 +18,13 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Run analysis script
+    - name: Run issues analysis
+      run: python daytona_issues.py
+    - name: Commit and push artifacts if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add artifact/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update analysis artifacts" && git push)
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: python daytona_issues.py
-    - name: Upload results
-      uses: actions/upload-artifact@v2
-      with:
-        name: analysis-results
-        path: |
-          artifact/*.txt
-          artifact/*.png
-          github_data.json
