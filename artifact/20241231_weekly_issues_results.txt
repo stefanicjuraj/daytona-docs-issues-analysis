@@ -32,7 +32,7 @@ Retrieved 100 issues from page 15
 Requesting page 16 of issues
 Retrieved 100 issues from page 16
 Requesting page 17 of issues
-Retrieved 63 issues from page 17
+Retrieved 64 issues from page 17
 Total all issues fetched: 607
 Fetching forks count for repository: daytonaio/daytona
 Forks count fetched: 1410
@@ -90,4 +90,4 @@ Weekly Issue Analysis:
 
 Total Forks: 1410
 
-Plot saved as: artifact/20241231_weekly_issues_plot.png
+Plot saved as: artifact/weekly_issues_plot.png
