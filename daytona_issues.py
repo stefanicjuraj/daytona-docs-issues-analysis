@@ -269,7 +269,7 @@ def main():
     fig = create_weekly_issues_plot(weekly_data, owner, repo)
 
     # Write the interactive plot
-    plot_filename = os.path.join(artifact_dir, f"{current_date}_weekly_issues_plot.png")
+    plot_filename = os.path.join(artifact_dir, "weekly_issues_plot.png")
     fig.write_image(plot_filename)
     print(f"\nPlot saved as: {plot_filename}")
 
@@ -278,4 +278,4 @@ if __name__ == "__main__":
     sys.stdout.close()  # Close the file
     sys.stdout = sys.__stdout__  # Reset stdout to the console
     print(f"Results saved in {output_file}")
-    print(f"Plot saved in {artifact_dir}/{current_date}_weekly_issues_plot.png")
+    print(f"Plot saved in {artifact_dir}/weekly_issues_plot.png")
