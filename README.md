@@ -1,6 +1,6 @@
-# Daytona Issues Analysis
+# Daytona Docs Issues Analysis
 
-Automated weekly analysis of GitHub issues for the [Daytona](https://github.com/daytonaio/daytona) project. This repository runs analysis every Monday via GitHub Actions to track and visualize issue trends.
+Automated weekly analysis of GitHub issues for the [Daytona Documentation](https://github.com/daytonaio/docs). This repository runs analysis every Monday via GitHub Actions to track and visualize issue trends.
 
 ## Latest Analysis Results
 

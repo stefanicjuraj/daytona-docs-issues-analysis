@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # GitHub repository information
 owner = "daytonaio"
-repo = "daytona"
+repo = "docs"
 api_url = f"https://api.github.com/repos/{owner}/{repo}"
 
 # Load environment variables from .env file, for local testing uncomment the following lines
